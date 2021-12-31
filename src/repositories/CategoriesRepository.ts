@@ -1,13 +1,12 @@
 import { v4 as uuidV4 } from 'uuid';
 
 import Category from '../models/Category';
+import {
+  ICategoriesRepository,
+  ICreateCategoryDTO,
+} from './ICategoriesRepository';
 
-interface ICreateCategoryDTO {
-  name: string;
-  description: string;
-}
-
-class CategoriesRepositories {
+class CategoriesRepository implements ICategoriesRepository {
   private categories: Category[];
 
   constructor() {
@@ -38,4 +37,4 @@ class CategoriesRepositories {
   }
 }
 
-export default CategoriesRepositories;
+export default CategoriesRepository;
