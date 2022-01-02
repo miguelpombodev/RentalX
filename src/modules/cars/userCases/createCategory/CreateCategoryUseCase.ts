@@ -1,12 +1,12 @@
 import {} from 'express';
-import { ICategoriesRepository } from '../repositories/ICategoriesRepository';
+import { ICategoriesRepository } from '../../repositories/ICategoriesRepository';
 
 interface IRequest {
   name: string;
   description: string;
 }
 
-class CreateCategoryService {
+class CreateCategoryUseCase {
   constructor(private readonly _repository: ICategoriesRepository) {}
 
   execute({ name, description }: IRequest): void {
@@ -20,4 +20,4 @@ class CreateCategoryService {
   }
 }
 
-export default CreateCategoryService;
+export default CreateCategoryUseCase;

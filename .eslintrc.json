@@ -26,7 +26,11 @@
         }
       }
     ],
+    "no-use-before-define": "off",
+    "function-paren-newline": "off",
+    "implicit-arrow-linebreak": "off",
     "no-underscore-dangle": "off",
+    "comma-dangle": "off",
     "class-methods-use-this": "off",
     "import/prefer-default-export": "off",
     "no-shadow": "off",
